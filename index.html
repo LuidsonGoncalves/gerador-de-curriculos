@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Currículo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Crie seu Currículo Minimalista</h1>
+        <form id="resumeForm">
+
+                    <label for="name">Nome Completo:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="linkedin">LinkedIn (opcional):</label>
+            <input type="url" id="linkedin" name="linkedin"><br><br>
+
+            <label for="summary">Resumo Profissional:</label><br>
+            <textarea id="summary" name="summary" rows="4"></textarea><br><br>
+
+            <h2>Experiência Profissional</h2>
+
+    <div id="experienceFields">
+        <div>
+            <label for="jobTitle1">Cargo:</label>
+            <input type="text" id="jobTitle1" name="jobTitle[]"><br><br>
+
+            <label for="company1">Empresa:</label>
+            <input type="text" id="company1" name="company[]"><br><br>
+
+            <label for="startDate1">Data de Início:</label>
+            <input type="text" id="startDate1" name="startDate[]" placeholder="Ex: Jan/2023"><br><br>
+
+            <label for="endDate1">Data de Fim (ou Atual):</label>
+            <input type="text" id="endDate1" name="endDate[]" placeholder="Ex: Mar/2024 ou Atual"><br><br>
+
+            <label for="jobDescription1">Descrição das Atividades:</label><br>
+            <textarea id="jobDescription1" name="jobDescription[]" rows="3"></textarea><br><br>
+        </div>
+    </div>
+
+<button type="button" id="addExperienceButton">Adicionar Mais Experiência</button><br><br>
+    <h2>Educação</h2>
+
+    <div id="educationFields">
+        <div>
+            <label for="degree1">Formação:</label>
+            <input type="text" id="degree1" name="degree[]"><br><br>
+
+            <label for="institution1">Instituição:</label>
+            <input type="text" id="institution1" name="institution[]"><br><br>
+
+            <label for="graduationDate1">Data de Conclusão (ou Cursando):</label>
+            <input type="text" id="graduationDate1" name="graduationDate[]" placeholder="Ex: Dez/2022 ou Cursando"><br><br>
+        </div>
+    </div>
+
+    <button type="button" id="addEducationButton">Adicionar Mais Formação</button><br><br>
+
+    <button type="submit">Gerar Currículo</button>
+
+        </form>
+        <div id="resumeOutput">
+            <h2>Seu Currículo</h2>
+            <div id="resumeContent">
+                </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
