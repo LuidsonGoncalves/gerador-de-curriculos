@@ -15,9 +15,12 @@ main {
 }
 
 h1, h2 {
-    color: #007bff;
-    text-align: center;
-    margin-bottom: 20px;
+    
+        font-family: "Coral Pixels", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        margin-bottom: 20px;
 }
 
 label {
